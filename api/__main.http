@@ -1,0 +1,35 @@
+@token=
+@host=http://localhost:5000
+@hostPath={{host}}
+@serverPath={{host}}/api
+@authorization=Bearer {{token}}
+@contentType=application/json
+
+###
+GET {{hostPath}}/
+
+###
+GET {{hostPath}}/review
+
+###
+GET {{hostPath}}/signup
+
+###
+GET {{hostPath}}/login
+
+
+
+###
+GET {{hostPath}}/ticketbook
+
+
+###
+GET {{hostPath}}/ticketsale
+
+
+###
+GET {{hostPath}}/review
+
+
+###
+GET {{hostPath}}/contact

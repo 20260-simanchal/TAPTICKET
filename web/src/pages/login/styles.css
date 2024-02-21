@@ -1,0 +1,60 @@
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../../../public/loginbg.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+
+.input-container {
+  margin-bottom: 3rem;
+  border-color: black;
+}
+
+.imagee {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Should match the width for a perfect circle */
+  overflow: hidden;
+  border-radius: 50%; /* Make the container circular */
+  margin: 20px auto; /* Center the container */
+  border: 2px solid #007bff; /* Add a border (optional) */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow (optional) */
+}
+.imagee img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#container .button-container {
+  margin-top: 2rem;
+
+  margin-bottom: 20 rem;
+  border-color: black;
+}
+.button {
+  height: 35px;
+  width: 300px;
+  background-color: aqua;
+  border-radius: 0.5rem;
+  border-color: black;
+  margin-top: 4rem;
+  margin-left: 8rem;
+}
+.input {
+  height: 35px;
+  width: 455px;
+  border-radius: 0.5rem;
+  border-color: black;
+}
+.size {
+  font-size: 2rem;
+  color: white;
+}
+#logintext {
+  font-size: 4rem;
+  color: white;
+}

@@ -1,0 +1,101 @@
+@token=
+@host=http://localhost:5000
+@serverPath={{host}}
+@authorization=Bearer {{token}}
+@contentType=application/json
+
+###
+POST {{serverPath}}/login
+content-type: 'application/json'
+
+{
+   "email": "sampleUsername",
+   "password": "1234"
+}
+
+
+###
+POST {{serverPath}}/user/signup
+content-type: 'application/json'
+
+{
+   {
+    " firstName": "sample 1",
+    "lastName" :"sample 2",
+    "email": "sample1@gmail.com",
+    "password": "hari1234",
+    "mobile": "8873612324",
+    "dob": "29-03-2002",
+}
+}
+
+
+
+
+###
+POST {{serverPath}}/user/ticketbook
+content-type: 'application/json'
+
+{
+   {
+      "eventName": "sample1",
+      "state":"sample2",
+      "city": "sample3",
+      "location": "sample4",
+      "mobile": "Hari1234", 
+      "eventDate": "25-10-2021",
+      "eventTime": "12:25 am",
+      "ticket": "23",
+   }
+}
+
+
+###
+POST {{serverPath}}/user/ticketSale
+content-type: 'application/json'
+
+{
+   {
+      "eventName": "sample1",
+      "state":"sample2",
+      "city": "sample3",
+      "location": "sample4",
+      "mobile": "2345623568", 
+      "eventDate": "25-10-2021",
+      "eventTime": "12:25 am",
+      "ticket": "23",
+   }
+}
+
+
+
+###
+POST {{serverPath}}/user/review
+content-type: 'application/json'
+
+{
+   {
+      "eventName": "sample1",
+      "location": "sample2", 
+      "date": "25-10-2021",
+      "name": "sample3",
+      "rating": "5star",
+      "review": "sample4",
+   }
+}
+
+
+###
+POST {{serverPath}}/user/contact
+content-type: 'application/json'
+
+{
+   {
+      "name": "sample1",
+      "email": "sample1@gmail.com",
+      "mobile": "2345623568", 
+      "message": "sample2",
+   }
+}
+
+
